@@ -14,11 +14,11 @@ const images = [
 ];
 
 const newList = images
-  .map((image) => `<li> <img crs='${image.url}' alt = '${image.alt}' width = '300px' height = '300px'></li>` )
+  .map((image) => `<li> <img src ='${image.url}' alt = '${image.alt}' width = '300' height = '300'></li>` )
   .join("");
 console.log(newList);
 
-const list = document.querySelector(".gallery");
+const list = document.querySelector("ul.gallery");
 
 list.insertAdjacentHTML("beforeend", newList);
 console.log(list);
